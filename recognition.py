@@ -67,24 +67,24 @@ class FaceRecognition:
                     confidence = '???'
                     
 
-                    # Calculate the shortest distance to face
+                # Calculate the shortest distance to face
                     face_distances = face_recognition.face_distance(self.known_face_encodings, face_encoding)
 
-                    #put name of the image + the % in the frame
+                #put name of the image + the % in the frame
                     best_match_index = np.argmin(face_distances)
+                
+                if matches[best_match_index]:
+                    name = self.known_face_names[best_match_index]
+                    confidence = face_confidence(face_distances[best_match_index])
+                    color = (0, 255, 0)
                     
-                    if matches[best_match_index]:
-                        name = self.known_face_names[best_match_index]
-                        confidence = face_confidence(face_distances[best_match_index])
-                        
-                    # else:
-                    #     name = "Not Verified"
-                        
+                else:
+                    name = "Not Verified"
+                    color = (0, 0, 255)
 
+                self.face_names.append(f'{name} ({confidence})')
 
-                    self.face_names.append(f'{name} ({confidence})')
-
-            self.process_current_frame = not self.process_current_frame
+            
 
             # Display the results
             for (top, right, bottom, left), name in zip(self.face_locations, self.face_names):
@@ -95,28 +95,11 @@ class FaceRecognition:
                 left *= 4
 
                 # Create the frame with the name
-
-                # if True in matches:
-                    
-                #     name = name
-                #     color = (0, 255, 0)
-                #     cv2.rectangle(frame, (left, bottom - 35), (right, bottom), (0, 255, 0), cv2.FILLED)
-                # else: 
-                    
-                #     name == "Unknown"
-                #     color = (0, 0, 255)
-                #     cv2.rectangle(frame, (left, bottom - 35), (right, bottom), (0, 0, 255), cv2.FILLED)
-
-                
-                cv2.rectangle(frame, (left, top), (right, bottom), (0, 255, 0), 2)
-                cv2.rectangle(frame, (left, bottom - 35), (right, bottom), (0, 255, 0), cv2.FILLED)
+                cv2.rectangle(frame, (left, top), (right, bottom),color, 2)
+                cv2.rectangle(frame, (left, bottom - 35), (right, bottom), color, cv2.FILLED)
                 cv2.putText(frame, name, (left + 6, bottom - 6), cv2.FONT_HERSHEY_DUPLEX, 0.8, (255, 255, 255), 1)
 
-                # else:   
-                    
-                #     cv2.rectangle(frame, (left, top), (right, bottom), (0, 255, 0), 2)
-                #     cv2.rectangle(frame, (left, bottom - 35), (right, bottom), (0, 255, 0), cv2.FILLED)
-                #     cv2.putText(frame, name, (left + 6, bottom - 6), cv2.FONT_HERSHEY_DUPLEX, 0.8, (255, 255, 255), 1)
+                
             
             # Display the resulting image
             cv2.imshow('Face Recognition', frame)
