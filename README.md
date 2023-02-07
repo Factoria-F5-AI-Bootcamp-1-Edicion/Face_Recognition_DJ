@@ -35,7 +35,9 @@ The "Face-recognition library can give problems to install. Make sure to have "c
 David García and Jonnathan Ospina
 
 Jonnathan:[@jonnathan_ospina_montalvo] (https://www.linkedin.com/in/jonnathan-ospina-montalvo-a0416a64/)
-David :[@doofromash](https://www.linkedin.com/in/dave-garc%C3%ADa/)
+
+
+David:[@doofromash] (https://www.linkedin.com/in/dave-garc%C3%ADa/)
 
 
 ## License
