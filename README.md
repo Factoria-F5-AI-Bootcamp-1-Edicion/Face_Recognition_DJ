@@ -1,8 +1,8 @@
-# Face_Recognition_DJ
 
-# Project Title
 
-Real time webcamp Face Recognition using Computer Vision.
+# Real time webcamp Face Recognition using Computer Vision.
+
+
 
 ## Description :speech_balloon:
 
@@ -17,20 +17,18 @@ This is a project of Face Recognition to identify people´s faces in real time u
 
 ### Executing program :checkered_flag:
 
+
+```
 * Install requirements.txt file
 * To run the progam write "python main.py"
 * The webcam will open and start making predictions in real time
 * To add a new person to verify just add a 1000x1000.jpg image from her/his face to the "/faces" folder
 ```
 
-```
-
 ## Help :heavy_exclamation_mark:
 
 The "Face-recognition library can give problems to install. Make sure to have "cmake" and "dlib" previously installed in your machine
-```
-command to run if program contains helper info
-```
+
 
 ## Authors :construction_worker:
 
