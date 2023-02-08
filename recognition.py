@@ -73,16 +73,16 @@ class FaceRecognition:
                 #put name of the image + the % in the frame
                     best_match_index = np.argmin(face_distances)
                 
-                if matches[best_match_index]:
-                    name = self.known_face_names[best_match_index]
-                    confidence = face_confidence(face_distances[best_match_index])
-                    color = (0, 255, 0)
-                    
-                else:
-                    name = "Not Verified"
-                    color = (0, 0, 255)
+                    if matches[best_match_index]:
+                        name = self.known_face_names[best_match_index]
+                        confidence = face_confidence(face_distances[best_match_index])
+                        color = (0, 255, 0)
+                        
+                    else:
+                        name = "Not Verified"
+                        color = (0, 0, 255)
 
-                self.face_names.append(f'{name} ({confidence})')
+                    self.face_names.append(f'{name} ({confidence})')
 
             
 
