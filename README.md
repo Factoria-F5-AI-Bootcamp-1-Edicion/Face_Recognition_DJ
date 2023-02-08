@@ -1,7 +1,9 @@
 
 
-# Real time webcamp Face Recognition using Computer Vision.
+# Real time Webcamp Face Recognition using Computer Vision.
 
+
+<img width="478" alt="Screenshot 2023-02-08 092953" src="https://user-images.githubusercontent.com/109512836/217479034-d83a5b34-00e2-46f1-9979-e0f437779f57.png">
 
 
 ## Description :speech_balloon:
@@ -48,5 +50,5 @@ This project is licensed under the [NAME HERE] License - see the LICENSE.md file
 
 Inspiration, code snippets, etc.
 * [ageitgey] https://github.com/ageitgey/face_recognition
-* [indently](https://github.com/indently/webcam_face_recognition)
-* [nicknochnack](https://github.com/nicknochnack/FaceRecognition)
+* [indently] (https://github.com/indently/webcam_face_recognition)
+* [nicknochnack] (https://github.com/nicknochnack/FaceRecognition)
