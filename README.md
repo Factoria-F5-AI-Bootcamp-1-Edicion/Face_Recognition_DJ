@@ -1,6 +1,6 @@
 
 
-# Real time webcamp Face Recognition using Computer Vision.
+# Real time Webcamp Face Recognition using Computer Vision.
 
 
 
