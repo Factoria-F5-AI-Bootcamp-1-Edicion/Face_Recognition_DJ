@@ -48,5 +48,5 @@ This project is licensed under the [NAME HERE] License - see the LICENSE.md file
 
 Inspiration, code snippets, etc.
 * [ageitgey] https://github.com/ageitgey/face_recognition
-* [indently](https://github.com/indently/webcam_face_recognition)
-* [nicknochnack](https://github.com/nicknochnack/FaceRecognition)
+* [indently] (https://github.com/indently/webcam_face_recognition)
+* [nicknochnack] (https://github.com/nicknochnack/FaceRecognition)
