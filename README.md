@@ -1,8 +1,9 @@
 
 
 # Real time Webcamp Face Recognition using Computer Vision.
-<img src= "https://github.com/Factoria-F5-AI-Bootcamp-1-Edicion/Face_Recognition_DJ/issues/1#issue-1575707205">
 
+
+<img width="478" alt="Screenshot 2023-02-08 092953" src="https://user-images.githubusercontent.com/109512836/217479034-d83a5b34-00e2-46f1-9979-e0f437779f57.png">
 
 
 ## Description :speech_balloon:
